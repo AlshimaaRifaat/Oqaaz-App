@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Oqaaz</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Oqaaz">OqaaZ</string>
+    <string name="The_simpler_way_to_search_for">The simpler way to search for </string>
+    <string name="your_need">your need</string>
+    <string name="GettingStarted">Getting Started</string>
+    <string name="Already_have_account">Already have account?</string>
+    <string name="Login_here">Login here</string>
+    <string name="YourEmail">Your Email</string>
+    <string name="full_name">Full name</string>
+    <string name="YourPassword">Your Password</string>
+    <string name="Password">Password</string>
+    <string name="Login">Login</string>
+    <string name="Register_here">Register here</string>
+    <string name="or_login_by">or login by</string>
+    <string name="Facebook">Facebook</string>
+    <string name="Google">Google +</string>
+    <string name="Your_name">Your name</string>
+    <string name="Email">Email</string>
+    <string name="Register">Register</string>
+    <string name="Have_an_account_login_here">Have an account login here</string>
+    <string name="Enter_product_link">Enter product link</string>
+    <string name="Link">Link</string>
+    <string name="Or">Or</string>
+    <string name="Enter_product_photo">Enter product photo</string>
+    <string name="Order">Order</string>
+    <string name="YourPhone">Your Phone</string>
+    <string name="Phone">Phone</string>
+    <string name="YourAddress">Your Address</string>
+    <string name="Address">Address</string>
+    <string name="YourNote">Your Note</string>
+    <string name="Note">Note</string>
+    <string name="Thank_you_for_shopping">Thank you for shopping</string>
+    <string name="Your_Order_ID">Your Order ID:</string>
+    <string name="Done">Done</string>
+    <string name="title_activity_navigation">NavigationActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+</resources>

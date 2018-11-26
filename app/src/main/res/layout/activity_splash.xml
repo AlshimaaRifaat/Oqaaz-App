@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/group76"
+    tools:context=".activity.SplashActivity">
+
+<ImageView
+    android:layout_width="@dimen/_200sdp"
+    android:layout_height="@dimen/_120sdp"
+    android:background="@drawable/logo_w"
+    android:layout_marginTop="@dimen/_100sdp"
+    android:layout_marginLeft="@dimen/_55sdp"
+    />
+</RelativeLayout>

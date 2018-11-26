@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/group86"
+    tools:context=".fragment.ThankUForShoppingFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/thank_u_thanks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="@string/Thank_you_for_shopping"
+        android:textSize="@dimen/_17sdp"
+        android:layout_marginTop="@dimen/_120sdp"
+        android:layout_centerInParent="true"
+        />
+    <TextView
+        android:id="@+id/thank_u_order_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="@string/Your_Order_ID"
+        android:textSize="@dimen/_17sdp"
+        android:layout_below="@+id/thank_u_thanks"
+        android:layout_marginLeft="@dimen/_63sdp"
+        />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="@dimen/_17sdp"
+    android:textColor="#fff"
+    android:text="1455"
+    android:layout_below="@+id/thank_u_thanks"
+    android:layout_toEndOf="@+id/thank_u_order_id"/>
+    <Button
+        android:id="@+id/register_btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:background="@drawable/button"
+        android:layout_marginTop="@dimen/_115sdp"
+        android:layout_marginLeft="@dimen/_13sdp"
+        android:layout_marginRight="@dimen/_13sdp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/thank_u_order_id"
+        android:text="@string/Done"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_14sdp"
+        />
+</RelativeLayout>

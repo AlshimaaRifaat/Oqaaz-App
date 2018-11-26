@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/home_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_125sdp"
+            ></android.support.v7.widget.RecyclerView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/home_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_below="@+id/home_recycler">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp">
+                <TextView
+                    android:id="@+id/home_link"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Enter_product_link"
+                    android:textColor="#6e6a6a"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+
+                    />
+                <EditText
+                    android:id="@+id/home_edit_text_link"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_below="@+id/home_link"
+                    android:layout_marginLeft="@dimen/_13sdp"
+                    android:layout_marginRight="@dimen/_13sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:background="@drawable/edit_text"
+                    android:hint="@string/Link"
+                    android:paddingLeft="@dimen/_10sdp"
+
+
+                    />
+                <TextView
+                    android:id="@+id/home_or"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_45sdp"
+                    android:layout_centerInParent="true"
+                    android:layout_below="@+id/home_edit_text_link"
+                    android:text="@string/Or"
+
+                    />
+                <TextView
+                    android:id="@+id/home_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Enter_product_photo"
+                    android:textColor="#6e6a6a"
+                    android:textSize="@dimen/_12sdp"
+
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_below="@+id/home_or"
+                    />
+                <ImageView
+                    android:id="@+id/content_navigation_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_125sdp"
+                    android:layout_marginLeft="@dimen/_35sdp"
+                    android:layout_marginRight="@dimen/_35sdp"
+                    android:layout_below="@+id/home_photo"
+                    android:layout_marginTop="@dimen/_13sdp"
+                    android:background="@drawable/group84" />
+                <!-- <Button
+                     android:id="@+id/login_btn_login"
+                     android:layout_width="match_parent"
+                     android:layout_height="@dimen/_45sdp"
+                     android:background="@drawable/button"
+                     android:layout_centerInParent="true"
+                     android:layout_below="@+id/enter_product_image"
+                     android:text="@string/Order"
+                     android:textColor="#fff"
+                     android:textAllCaps="false"
+                     android:textSize="@dimen/_14sdp"
+                     />-->
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_below="@+id/home_card_view"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginLeft="@dimen/_13sdp"
+            android:layout_marginRight="@dimen/_13sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:background="@drawable/button"
+            android:text="@string/Order"
+            android:textColor="#fff"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_14sdp"/>
+    </RelativeLayout>
+</ScrollView>
