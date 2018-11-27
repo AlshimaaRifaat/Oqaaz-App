@@ -5,7 +5,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.example.shosho.oqaaz.MainActivity;
+
 import com.example.shosho.oqaaz.R;
 import com.example.shosho.oqaaz.adapter.ViewPagerAdapter;
 
@@ -111,7 +111,7 @@ TextView skip;
         skip.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent( ViewPagerActivity.this,MainActivity.class );
+                Intent intent=new Intent( ViewPagerActivity.this,LoginActivity.class );
                 startActivity( intent );
             }
         } );

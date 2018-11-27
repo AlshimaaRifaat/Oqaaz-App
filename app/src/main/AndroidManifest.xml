@@ -18,7 +18,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name=".activity.LoginActivity" />
         <activity
             android:name=".activity.NavigationActivity"
             android:label="@string/title_activity_navigation"
@@ -30,7 +30,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.GettingStartedActivity" />
-        <activity android:name=".activity.ViewPagerActivity"></activity>
+        <activity android:name=".activity.ViewPagerActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.RegisterActivity"></activity>
     </application>
 
 </manifest>

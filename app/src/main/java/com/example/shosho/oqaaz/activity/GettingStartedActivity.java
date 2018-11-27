@@ -12,12 +12,14 @@ import com.example.shosho.oqaaz.R;
 public class GettingStartedActivity extends AppCompatActivity {
 TextView appName;
 Button gettingStarted;
+TextView loginHere;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.activity_getting_started );
         appName=findViewById( R.id.getting_started_name );
         gettingStarted=findViewById( R.id.getting_started_btn_start );
+         loginHere=findViewById( R.id.getting_started_login_here );
         appName.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -29,6 +31,13 @@ Button gettingStarted;
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent( GettingStartedActivity.this,ViewPagerActivity.class );
+                startActivity( intent );
+            }
+        } );
+        loginHere.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent( GettingStartedActivity.this,LoginActivity.class );
                 startActivity( intent );
             }
         } );

@@ -60,6 +60,7 @@
         android:layout_marginTop="@dimen/_15sdp"
         android:layout_centerInParent="true" />
     <TextView
+        android:id="@+id/getting_started_login_here"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/getting_started_already_have_account"
