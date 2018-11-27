@@ -20,6 +20,7 @@ TextView loginHere;
         appName=findViewById( R.id.getting_started_name );
         gettingStarted=findViewById( R.id.getting_started_btn_start );
          loginHere=findViewById( R.id.getting_started_login_here );
+
         appName.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -27,6 +28,7 @@ TextView loginHere;
                 startActivity( intent );
             }
         } );
+        
         gettingStarted.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View view) {

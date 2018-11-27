@@ -1,5 +1,6 @@
 package com.example.shosho.oqaaz.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -88,7 +89,8 @@ onNavigationItemSelected( navigationView.getMenu().getItem( 0 ) );
              break;
          case R.id.nav_help:
              currentSelectedPosition = 1;
-             fragment = new HelpFragment();
+             Intent intent=new Intent( NavigationActivity.this,GettingStartedActivity.class );
+             startActivity( intent );
              break;
          case R.id.nav_my_orders:
              currentSelectedPosition = 2;
