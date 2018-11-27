@@ -31,4 +31,9 @@
     <string name="Thank_you_for_shopping">Thank you for shopping</string>
     <string name="Your_Order_ID">Your Order ID:</string>
     <string name="Done">Done</string>
+    <string name="Skip">Skip</string>
+    <string name="EXPLORE">EXPLORE</string>
+    <string name="Find_your_product_by_product_photo_or_product_link">Find your product by product photo or product link</string>
+    <string name="You_will_deliver_your_product_fastly">You will deliver your product fastly</string>
+    <string name="You_will_pay_in_door">You will pay in door</string>
 </resources>

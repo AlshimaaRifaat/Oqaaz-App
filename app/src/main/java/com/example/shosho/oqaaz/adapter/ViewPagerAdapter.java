@@ -9,19 +9,24 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import com.example.shosho.oqaaz.R;
 
 public class ViewPagerAdapter extends PagerAdapter {
     Context context;
     int[]images;
+    String []Names;
+    String []Descriptions;
     LayoutInflater layoutInflater;
    // int position=3;
 
-    public ViewPagerAdapter(Context context, int[] images) {
 
+    public ViewPagerAdapter(Context context, int[] images, String[] names, String[] descriptions) {
         this.context = context;
         this.images = images;
+        Names = names;
+        Descriptions = descriptions;
     }
 
     @Override
@@ -38,10 +43,18 @@ public class ViewPagerAdapter extends PagerAdapter {
     @Override
     public Object instantiateItem(@NonNull ViewGroup container, int position) {
         ImageView imageView;
+        TextView textNames;
+        TextView textDescriptions;
         layoutInflater=(LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View view=layoutInflater.inflate( R.layout.item_view_pager,container,false );
         imageView=view.findViewById( R.id.item_view_pager_image );
+        textNames=view.findViewById( R.id.item_view_pager_text_name );
+        textDescriptions=view.findViewById( R.id.item_view_pager_text_description );
+
         imageView.setImageResource( images[position] );
+        textNames.setText(Names[position]);
+        textDescriptions.setText(Descriptions[position]);
+
         ((ViewPager)container).addView( view );
         return view;
 

@@ -43,4 +43,9 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <string name="Skip">Skip</string>
+    <string name="EXPLORE">EXPLORE</string>
+    <string name="Find_your_product_by_product_photo_or_product_link">Find your product by product photo or product link</string>
+    <string name="You_will_deliver_your_product_fastly">You will deliver your product fastly</string>
+    <string name="You_will_pay_in_door">You will pay in door</string>
 </resources>

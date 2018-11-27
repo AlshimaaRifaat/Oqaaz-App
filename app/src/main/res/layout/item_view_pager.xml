@@ -12,4 +12,35 @@
         android:scaleType="fitXY"
         />
 
+<ImageView
+    android:id="@+id/item_view_pager_image_explore"
+    android:layout_width="@dimen/_120sdp"
+    android:layout_height="@dimen/_120sdp"
+    android:background="@drawable/i"
+    android:layout_marginLeft="@dimen/_82sdp"
+    android:layout_marginTop="@dimen/_60sdp"
+    />
+    <TextView
+        android:id="@+id/item_view_pager_text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="@string/EXPLORE"
+        android:textAllCaps="true"
+        android:textSize="@dimen/_27sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_below="@+id/item_view_pager_image_explore"
+       android:layout_centerInParent="true"/>
+    <TextView
+        android:id="@+id/item_view_pager_text_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Find_your_product_by_product_photo_or_product_link"
+        android:textSize="@dimen/_17sdp"
+        android:textColor="#fff"
+        android:layout_below="@+id/item_view_pager_text_name"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_centerInParent="true"
+        />
 </RelativeLayout>
