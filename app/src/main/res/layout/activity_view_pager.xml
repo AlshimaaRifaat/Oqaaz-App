@@ -9,7 +9,6 @@
     android:id="@+id/view_pager"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="@dimen/_5sdp"
     android:background="#fff"
     >
 
@@ -22,7 +21,6 @@
         android:layout_alignBottom="@+id/view_pager"
         android:layout_alignParentStart="true"
         android:layout_marginBottom="@dimen/_10sdp"></me.relex.circleindicator.CircleIndicator>
-
     <TextView
         android:id="@+id/view_pager_text_skip"
         android:layout_width="wrap_content"
@@ -34,6 +32,6 @@
         android:layout_marginBottom="@dimen/_17sdp"
         android:layout_alignParentRight="true"
         android:layout_marginRight="@dimen/_17sdp"
-
         />
+
 </RelativeLayout>

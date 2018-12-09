@@ -11,6 +11,8 @@ import com.example.shosho.oqaaz.adapter.ViewPagerAdapter;
 
 import android.os.Handler;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.TextView;
 
 import java.util.Timer;
@@ -32,6 +34,9 @@ TextView skip;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView( R.layout.activity_view_pager );
        Names=new String[]
                 {
@@ -77,18 +82,18 @@ TextView skip;
                 if(state==ViewPager.SCROLL_STATE_IDLE)
                 {
                     int pagesCount=images.length;
-                    if(CURRENT_PAGE==0)
+                    /*if(CURRENT_PAGE==0)
                     {
                         viewPager.setCurrentItem( pagesCount-1,false );
                     }else if(CURRENT_PAGE==pagesCount-1)
                     {
                         viewPager.setCurrentItem( 0,false );
-                    }
+                    }*/
 
                 }
             }
         } );
-       final Handler handler=new Handler(  );
+      /* final Handler handler=new Handler(  );
         final Runnable runnableUpdate=new Runnable() {
             @Override
             public void run() {
@@ -107,7 +112,8 @@ TextView skip;
             public void run() {
                 handler.post(runnableUpdate);
             }
-        }, 3000, 3000);
+        }, 2000, 2000);*/
+
         skip.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -115,5 +121,6 @@ TextView skip;
                 startActivity( intent );
             }
         } );
+
     }
 }

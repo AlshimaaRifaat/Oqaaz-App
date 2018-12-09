@@ -2,26 +2,28 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragment.HomeFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:background="#eef3fa"
+        android:layout_height="wrap_content">
+
         <android.support.v7.widget.RecyclerView
             android:id="@+id/home_recycler"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_125sdp"
-            ></android.support.v7.widget.RecyclerView>
+            android:layout_height="@dimen/_145sdp"
+           android:layout_below="@+id/home_toolbar"
+           ></android.support.v7.widget.RecyclerView>
         <android.support.v7.widget.CardView
             android:id="@+id/home_card_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#fff"
+            app:cardBackgroundColor="#fff"
             android:layout_margin="@dimen/_5sdp"
             android:layout_below="@+id/home_recycler">
-
-
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -74,7 +76,7 @@
                     android:layout_below="@+id/home_or"
                     />
                 <ImageView
-                    android:id="@+id/content_navigation_image"
+                    android:id="@+id/home_image"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_125sdp"
                     android:layout_marginLeft="@dimen/_35sdp"
@@ -82,6 +84,20 @@
                     android:layout_below="@+id/home_photo"
                     android:layout_marginTop="@dimen/_13sdp"
                     android:background="@drawable/group84" />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_below="@+id/home_image"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginLeft="@dimen/_13sdp"
+                    android:layout_marginRight="@dimen/_13sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:background="@drawable/button"
+                    android:text="@string/Order"
+                    android:textColor="#fff"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/_14sdp"/>
                 <!-- <Button
                      android:id="@+id/login_btn_login"
                      android:layout_width="match_parent"
@@ -97,19 +113,7 @@
             </RelativeLayout>
 
         </android.support.v7.widget.CardView>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_45sdp"
-            android:layout_below="@+id/home_card_view"
-            android:layout_centerInParent="true"
-            android:layout_marginTop="@dimen/_8sdp"
-            android:layout_marginLeft="@dimen/_13sdp"
-            android:layout_marginRight="@dimen/_13sdp"
-            android:layout_marginBottom="@dimen/_8sdp"
-            android:background="@drawable/button"
-            android:text="@string/Order"
-            android:textColor="#fff"
-            android:textAllCaps="false"
-            android:textSize="@dimen/_14sdp"/>
+
     </RelativeLayout>
+
 </ScrollView>

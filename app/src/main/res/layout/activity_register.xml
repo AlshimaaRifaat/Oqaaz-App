@@ -14,7 +14,7 @@
         android:text="@string/Your_name"
         android:textColor="#6e6a6a"
         android:textSize="@dimen/_12sdp"
-        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_52sdp"
         android:layout_marginLeft="@dimen/_10sdp"
         />
     <EditText

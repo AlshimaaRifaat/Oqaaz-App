@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center">
+    android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/item_view_pager_image"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/group_pager_78"
-        android:scaleType="fitXY"
         />
 
 <ImageView
@@ -17,7 +15,7 @@
     android:layout_width="@dimen/_120sdp"
     android:layout_height="@dimen/_120sdp"
     android:background="@drawable/i"
-    android:layout_marginLeft="@dimen/_82sdp"
+    android:layout_centerHorizontal="true"
     android:layout_marginTop="@dimen/_60sdp"
     />
     <TextView
@@ -38,9 +36,21 @@
         android:text="@string/Find_your_product_by_product_photo_or_product_link"
         android:textSize="@dimen/_17sdp"
         android:textColor="#fff"
+
         android:layout_below="@+id/item_view_pager_text_name"
-        android:layout_marginLeft="@dimen/_10sdp"
-        android:layout_marginRight="@dimen/_10sdp"
         android:layout_centerInParent="true"
         />
+
+    <!--<TextView
+        android:id="@+id/item_view_pager_text_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_17sdp"
+        android:textColor="#5ecfc0"
+        android:text="@string/Skip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_17sdp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/_17sdp"
+        />-->
 </RelativeLayout>

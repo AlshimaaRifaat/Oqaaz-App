@@ -7,25 +7,25 @@
     android:background="#fff"
     tools:context=".activity.LoginActivity">
     <TextView
-        android:id="@+id/login_your_name"
+        android:id="@+id/login_your_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Your_name"
+        android:text="@string/YourEmail"
         android:textColor="#6e6a6a"
         android:textSize="@dimen/_12sdp"
-        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_52sdp"
         android:layout_marginLeft="@dimen/_10sdp"
         />
     <EditText
         android:id="@+id/login_edit_text_email"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_45sdp"
-        android:layout_below="@+id/login_your_name"
+        android:layout_below="@+id/login_your_email"
         android:layout_marginLeft="@dimen/_13sdp"
         android:layout_marginRight="@dimen/_13sdp"
         android:layout_marginTop="@dimen/_8sdp"
         android:background="@drawable/edit_text"
-        android:hint="@string/full_name"
+        android:hint="@string/Email"
         android:paddingLeft="@dimen/_10sdp"
         />
     <TextView

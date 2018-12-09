@@ -45,13 +45,15 @@ public class ViewPagerAdapter extends PagerAdapter {
         ImageView imageView;
         TextView textNames;
         TextView textDescriptions;
-        layoutInflater=(LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View view=layoutInflater.inflate( R.layout.item_view_pager,container,false );
+//        layoutInflater=(LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+
+
+        View view=LayoutInflater.from(container.getContext()).inflate(R.layout.item_view_pager,container,false );
         imageView=view.findViewById( R.id.item_view_pager_image );
         textNames=view.findViewById( R.id.item_view_pager_text_name );
         textDescriptions=view.findViewById( R.id.item_view_pager_text_description );
 
-        imageView.setImageResource( images[position] );
+        imageView.setBackgroundResource( images[position] );
         textNames.setText(Names[position]);
         textDescriptions.setText(Descriptions[position]);
 
@@ -66,8 +68,5 @@ public class ViewPagerAdapter extends PagerAdapter {
         ((ViewPager)container).removeView( (RelativeLayout)object );
     }
 
-    @Override
-    public float getPageWidth(int position) {
-        return .90f;
-    }
+
 }

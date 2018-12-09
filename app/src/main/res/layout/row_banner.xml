@@ -6,5 +6,6 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="@dimen/_125sdp"
-        android:id="@+id/row_banner_image"/>
+        android:id="@+id/row_banner_image"
+        android:background="@drawable/moakta"/>
 </RelativeLayout>

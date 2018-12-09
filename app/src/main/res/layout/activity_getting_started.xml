@@ -13,7 +13,7 @@
         android:textColor="#fff"
         android:text="@string/Oqaaz"
         android:textSize="@dimen/_37sdp"
-        android:layout_marginTop="@dimen/_145sdp"
+        android:layout_marginTop="@dimen/_155sdp"
         android:layout_marginLeft="@dimen/_95sdp"
         />
     <TextView
@@ -42,7 +42,7 @@
         android:layout_width="@dimen/_150sdp"
         android:layout_height="@dimen/_45sdp"
         android:background="@drawable/button"
-        android:layout_marginTop="@dimen/_53sdp"
+        android:layout_marginTop="@dimen/_80sdp"
         android:layout_centerInParent="true"
         android:layout_below="@+id/getting_started_remaining_description"
         android:text="@string/GettingStarted"
